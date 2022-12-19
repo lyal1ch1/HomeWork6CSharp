@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Сколько чисел вы хотите ввести?");
+Console.WriteLine("Сколько чисел вы хотите ввести?");
 int length = int.Parse(Console.ReadLine()!);
 int count = 0;
 for (int i = 0; i < length; i++)
@@ -10,4 +10,15 @@ for (int i = 0; i < length; i++)
         count++;
     }
 }
-Console.WriteLine("Вы ввели " + count + " числа больше 0");
+if (count == 0 || count >= 5)
+{
+   Console.WriteLine("Вы ввели " + count + " чисел больше 0"); 
+} 
+if (count == 1)
+{
+ Console.WriteLine("Вы ввели " + count + " число больше 0");
+} 
+if (count > 1 && count < 5 )
+{
+ Console.WriteLine("Вы ввели " + count + " числа больше 0");
+} 
